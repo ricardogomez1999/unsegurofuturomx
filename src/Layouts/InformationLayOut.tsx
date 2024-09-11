@@ -3,6 +3,7 @@ import NavBar from "../Components/NavBar";
 import { ToastContainer } from "react-toastify";
 import Logo from "../Components/Logo";
 import BurgerMenu from "../Components/BurgerMenu";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function InformationLayOut() {
   return (
