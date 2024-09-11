@@ -9,6 +9,7 @@ import VidaMujer from "./Components/Productos/VidaMujer";
 import StarDotal from "./Components/Productos/StarDotal";
 import Educacion from "./Components/Productos/Educacion";
 import SeguroDeAhorro from "./Components/Productos/SeguroDeAhorro";
+import AvisoDePrivacidad from "./views/AvisoDePrivacidad";
 
 export default function Router() {
   return (
@@ -24,6 +25,7 @@ export default function Router() {
           <Route path="/stardotal" element={<StarDotal />} />
           <Route path="/educacion" element={<Educacion />} />
           <Route path="/segurodeahorro" element={<SeguroDeAhorro />} />
+          <Route path="/aviso-de-privacidad" element={<AvisoDePrivacidad />} />
         </Route>
       </Routes>
     </BrowserRouter>

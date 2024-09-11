@@ -24,6 +24,16 @@ export default function NavBar() {
             Contactanos
           </NavLink>
         </li>
+        <li>
+          <NavLink
+            to="/aviso-de-privacidad"
+            className={({ isActive }) =>
+              isActive ? "font-bold" : "font-normal"
+            }
+          >
+            Aviso de Privacidad
+          </NavLink>
+        </li>
       </ul>
     </>
   );

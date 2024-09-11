@@ -43,6 +43,16 @@ export default function BurgerMenu() {
                     Contactanos
                   </NavLink>
                 </li>
+                <li>
+                  <NavLink
+                    to="/aviso-de-privacidad"
+                    className={({ isActive }) =>
+                      isActive ? "font-bold" : "font-normal"
+                    }
+                  >
+                    Aviso de Privacidad
+                  </NavLink>
+                </li>
               </ul>
             </div>
           </div>
