@@ -3,13 +3,16 @@ import { FormData } from "../types";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
 import ErrorMessage from "./ErrorMessage";
+import { useLocation } from "react-router-dom";
 
 export default function ContactUsForm() {
+  const location = useLocation();
   const initialValues: FormData = {
     name: "",
     lastname: "",
     email: "",
     phone: "",
+    location: location.pathname,
   };
   const {
     register,
