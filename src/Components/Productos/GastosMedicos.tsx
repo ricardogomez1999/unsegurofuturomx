@@ -1,6 +1,9 @@
+import { useLocation } from "react-router-dom";
 import ContactForm from "../ContactForm";
 
 export default function GastosMedicos() {
+  const { pathname } = useLocation();
+
   return (
     <>
       <div className=" md:flex bg-gray-100 p-6 md:h-72 rounded-lg gap-3 items-center">
@@ -29,7 +32,7 @@ export default function GastosMedicos() {
           Empieza hoy con un futuro seguro para ti y tu familia
         </h1>
         <h2 className=" text-2xl">Dejanos tus datos para contactarte</h2>
-        <ContactForm />
+        <ContactForm location={pathname} />
       </div>
     </>
   );

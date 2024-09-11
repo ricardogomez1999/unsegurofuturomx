@@ -4,12 +4,17 @@ import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
 import ErrorMessage from "./ErrorMessage";
 
-export default function ContactForm() {
+type ContactPropsType = {
+  location: string;
+};
+
+export default function ContactForm({ location }: ContactPropsType) {
   const initialValues: FormData = {
     name: "",
     lastname: "",
     email: "",
     phone: "",
+    location: location,
   };
   const {
     register,
