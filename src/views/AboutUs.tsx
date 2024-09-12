@@ -1,6 +1,13 @@
+import { Helmet } from "react-helmet-async";
+
 export default function AboutUs() {
   return (
     <div className=" md:flex h-[550px]">
+      <Helmet>
+        <title>
+          Acerca de Nosotros | Conoce como pondemos ayudarte en tu futuro
+        </title>
+      </Helmet>
       <div className=" flex md:w-1/2 p-8 flex-col justify-start">
         <div>
           <h1 className=" text-3xl md:text-5xl text-blue-900">

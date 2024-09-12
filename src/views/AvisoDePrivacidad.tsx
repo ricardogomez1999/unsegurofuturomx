@@ -1,6 +1,11 @@
+import { Helmet } from "react-helmet-async";
+
 export default function AvisoDePrivacidad() {
   return (
     <div>
+      <Helmet>
+        <title>Aviso de Privacidad | unfuturoseguromx</title>
+      </Helmet>
       <h1 className=" text-3xl font-bold my-3">AVISO DE PRIVACIDAD</h1>
 
       <p className=" text-lg">

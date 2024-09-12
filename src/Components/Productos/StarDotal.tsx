@@ -1,10 +1,14 @@
 import { useLocation } from "react-router-dom";
 import ContactForm from "../ContactForm";
+import { Helmet } from "react-helmet-async";
 
 export default function StarDotal() {
   const { pathname } = useLocation();
   return (
     <>
+      <Helmet>
+        <title>Seguros de ahorro | Invierte seguro con nosotros </title>
+      </Helmet>
       <div className=" md:flex bg-gray-100 p-6 md:h-72 rounded-lg gap-3 items-center">
         <div className=" md:w-1/2 p-2 md:h-80  flex flex-col md:justify-center">
           <h1 className=" text-2xl md:text-3xl font-bold text-blue-900">

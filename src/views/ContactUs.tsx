@@ -1,8 +1,12 @@
+import { Helmet } from "react-helmet-async";
 import ContactUsForm from "../Components/ContactUsForm";
 
 export default function ContactUs() {
   return (
     <div>
+      <Helmet>
+        <title>Contactanos | Seguros de Vida en Mexico</title>
+      </Helmet>
       <h1 className=" text-5xl text-blue-900 font-bold">
         Ponte en contacto con nosotros!
       </h1>

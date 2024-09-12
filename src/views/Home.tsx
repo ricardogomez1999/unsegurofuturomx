@@ -1,8 +1,12 @@
 import Services from "../Components/Services";
+import { Helmet } from "react-helmet-async";
 
 export default function Home() {
   return (
     <div className="md:bg-homeBg bg-contain bg-no-repeat bg-right">
+      <Helmet>
+        <title>Pagina de Inicio | Agencia de Seguros en Mexico</title>
+      </Helmet>
       <div className=" md:w-3/4">
         <h3 className=" text-3xl md:text-4xl">
           Bienvenidos a unfuturoseguromx{" "}
