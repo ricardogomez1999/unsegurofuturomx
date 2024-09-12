@@ -1,3 +1,3 @@
 export default function Logo() {
-  return <img src="/logo1.png" alt="logo" className="w-full" />;
+  return <img src="/logo1.webp" alt="logo" className="w-full" />;
 }

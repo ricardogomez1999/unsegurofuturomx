@@ -4,8 +4,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        homeBg: "url('/backgoundHome.png')",
-        segubeca: "url('/segubeca.png')",
+        homeBg: "url('/bgHome.webp')",
       },
     },
   },

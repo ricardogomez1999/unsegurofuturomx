@@ -23,7 +23,7 @@ export default function SeguroDeVida() {
         </div>
         <div className="md:w-1/2 rounded-lg h-64 md:overflow-hidden">
           <img
-            src="/segurovida.png"
+            src="/segurovida.webp"
             alt="imagen educacion"
             className=" w-full h-full md:object-cover"
           />

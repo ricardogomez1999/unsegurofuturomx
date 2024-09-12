@@ -26,7 +26,7 @@ export default function Educacion() {
         </div>
         <div className="md:w-1/2 rounded-lg h-64 md:overflow-hidden">
           <img
-            src="/segubeca.png"
+            src="/segubeca.webp"
             alt="imagen educacion"
             className=" w-full h-full md:object-cover"
           />

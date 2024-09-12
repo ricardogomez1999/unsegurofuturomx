@@ -13,7 +13,7 @@ export default function ContactUs() {
         <div className=" md:w-1/2 p-5 h-96 md:overflow-hidde">
           <img
             className="w-full h-full md:object-cover"
-            src="/ContactUS.png"
+            src="/ContactUS.webp"
             alt="contact us image"
           />
         </div>

@@ -27,7 +27,7 @@ export default function AboutUs() {
         <div className=" h-1/2 w-full md:overflow-hidden rounded-xl">
           <img
             className="md:object-cover h-full w-full"
-            src="/AboutUs.png"
+            src="/aboutUs.webp"
             alt="about us"
           />
         </div>
