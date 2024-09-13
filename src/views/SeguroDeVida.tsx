@@ -1,37 +1,34 @@
 import { useLocation } from "react-router-dom";
-import ContactForm from "../ContactForm";
+import ContactForm from "../Components/ContactForm";
 import { Helmet } from "react-helmet-async";
 
-export default function Educacion() {
+export default function SeguroDeVida() {
   const { pathname } = useLocation();
-
   return (
     <>
       <Helmet>
-        <title>Seguros de Educacion en Mexico </title>
+        <title>Seguros de Vida en Mexico | unfuturoseguromx </title>
       </Helmet>
       <div className=" md:flex bg-gray-100 p-6 md:h-72 rounded-lg gap-3 items-center">
         <div className=" md:w-1/2 p-2 md:h-80  flex flex-col md:justify-center">
           <h1 className=" text-2xl md:text-3xl font-bold text-blue-900">
-            SeguBeca
+            Seguro de Vida
           </h1>
           <h2 className="text-xl my-1 text-blue-800">
-            Anticípate al futuro, ¡asegura su educación!
+            Protege el futuro de tus seres queridos
           </h2>
-          <ul className=" list-disc md:text-xl w-5/6 mx-auto flex flex-col gap-2">
-            <li>
-              Garantiza su educación para encaminarlos al éxito profesional.
-            </li>
-            <li>Asegura tu vida y la de tu pareja, al mismo tiempo.</li>
-            <li>
-              Ahorra de forma confiable y segura, sin arriesgar tu capital.
-            </li>
-          </ul>
+          <p className=" md:text-lg mx-auto flex flex-col">
+            Es un instrumento que principalmente busca proteger a tu familia y
+            tu patrimonio en caso de fallecimiento o invalidez. Dado que estas
+            situaciones pueden afectar la estabilidad financiera de tu familia o
+            seres queridos, la protección de un Seguro les proporciona los
+            recursos para evitarlo.
+          </p>
         </div>
         <div className="md:w-1/2 rounded-lg h-64 md:overflow-hidden">
           <img
-            src="/segubeca.webp"
-            alt="imagen educacion"
+            src="/segurodevida.webp"
+            alt="imagen vida"
             className=" w-full h-full md:object-cover"
           />
         </div>

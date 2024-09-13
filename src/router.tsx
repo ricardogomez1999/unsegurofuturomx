@@ -3,12 +3,12 @@ import Home from "./views/Home";
 import InformationLayOut from "./Layouts/InformationLayOut";
 import AboutUs from "./views/AboutUs";
 import ContactUs from "./views/ContactUs";
-import SeguroDeVida from "./Components/Productos/SeguroDeVida";
-import GastosMedicos from "./Components/Productos/GastosMedicos";
-import VidaMujer from "./Components/Productos/VidaMujer";
-import StarDotal from "./Components/Productos/StarDotal";
-import Educacion from "./Components/Productos/Educacion";
-import SeguroDeAhorro from "./Components/Productos/SeguroDeAhorro";
+import SeguroDeVida from "./views/SeguroDeVida";
+import GastosMedicos from "./views/GastosMedicos";
+import VidaMujer from "./views/VidaMujer";
+import StarDotal from "./views/StarDotal";
+import Educacion from "./views/Educacion";
+import SeguroDeAhorro from "./views/SeguroDeAhorro";
 import AvisoDePrivacidad from "./views/AvisoDePrivacidad";
 import { HelmetProvider } from "react-helmet-async";
 

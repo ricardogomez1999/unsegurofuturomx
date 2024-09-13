@@ -1,31 +1,32 @@
 import { useLocation } from "react-router-dom";
-import ContactForm from "../ContactForm";
+import ContactForm from "../Components/ContactForm";
 import { Helmet } from "react-helmet-async";
 
-export default function GastosMedicos() {
+export default function SeguroDeAhorro() {
   const { pathname } = useLocation();
-
   return (
     <>
       <Helmet>
-        <title>Gastos Medicos Mayores | unsegurofuturomx </title>
+        <title>Seguros de Ahorro | unsegurofuturomx </title>
       </Helmet>
       <div className=" md:flex bg-gray-100 p-6 md:h-72 rounded-lg gap-3 items-center">
         <div className=" md:w-1/2 p-2 md:h-80  flex flex-col md:justify-center">
           <h1 className=" text-2xl md:text-3xl font-bold text-blue-900">
-            Seguro de Gastos Medicos Mayores
+            ¿Que es un seguro de ahorro?
           </h1>
-          <h2 className="md:text-xl my-1 text-blue-800">
-            Protege Mejor tu salud y la de tus seres queridos
+          <h2 className="text-xl my-1 text-blue-800">
+            Protección más ahorro al alcance de tu bolsillo.
           </h2>
           <p className=" md:text-lg mx-auto flex flex-col gap-2">
-            Es un instrumento que permite protegerte a ti y tus seres queridos
-            ante el impacto económico que puede representar un gasto en salud.
+            Con este Seguro de Vida te ayudamos a cumplir tus metas durante el
+            periodo en el que estas iniciando tus labores. Puedes protegerte a
+            bajo costo y adicional ahorrar tus excedentes para conformar un
+            capital a largo plazo.
           </p>
         </div>
         <div className="md:w-1/2 rounded-lg h-64 md:overflow-hidden">
           <img
-            src="/gastosmedicos.webp"
+            src="/ahorro.webp"
             alt="imagen educacion"
             className=" w-full h-full md:object-cover"
           />

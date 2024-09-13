@@ -1,32 +1,33 @@
 import { useLocation } from "react-router-dom";
-import ContactForm from "../ContactForm";
+import ContactForm from "../Components/ContactForm";
 import { Helmet } from "react-helmet-async";
 
-export default function SeguroDeAhorro() {
+export default function VidaMujer() {
   const { pathname } = useLocation();
   return (
     <>
       <Helmet>
-        <title>Seguros de Ahorro | unsegurofuturomx </title>
+        <title>Seguros para las mujeres | unfuturoseguromx </title>
       </Helmet>
       <div className=" md:flex bg-gray-100 p-6 md:h-72 rounded-lg gap-3 items-center">
         <div className=" md:w-1/2 p-2 md:h-80  flex flex-col md:justify-center">
           <h1 className=" text-2xl md:text-3xl font-bold text-blue-900">
-            ¿Que es un seguro de ahorro?
+            Vida Mujer
           </h1>
           <h2 className="text-xl my-1 text-blue-800">
-            Protección más ahorro al alcance de tu bolsillo.
+            Que te motive Proteger Mejor® todos los aspectos de tu vida
           </h2>
-          <p className=" md:text-lg mx-auto flex flex-col gap-2">
-            Con este Seguro de Vida te ayudamos a cumplir tus metas durante el
-            periodo en el que estas iniciando tus labores. Puedes protegerte a
-            bajo costo y adicional ahorrar tus excedentes para conformar un
-            capital a largo plazo.
+          <p className="md:text-lg mx-auto flex flex-col gap-2">
+            Vida Mujer protege tu patrimonio y te brinda un atractivo esquema de
+            ahorro con el que podrás materializar aquellas metas que te
+            propongas. Además, contarás con anticipos de la suma asegurada que
+            contrates en caso de padecer alguna enfermedad propia de las
+            mujeres.
           </p>
         </div>
         <div className="md:w-1/2 rounded-lg h-64 md:overflow-hidden">
           <img
-            src="/ahorro.webp"
+            src="/vidamujer.webp"
             alt="imagen educacion"
             className=" w-full h-full md:object-cover"
           />
