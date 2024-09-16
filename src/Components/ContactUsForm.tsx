@@ -4,6 +4,7 @@ import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
 import ErrorMessage from "./ErrorMessage";
 import { useLocation } from "react-router-dom";
+import { services } from "../data";
 
 export default function ContactUsForm() {
   const location = useLocation();
@@ -13,6 +14,7 @@ export default function ContactUsForm() {
     email: "",
     phone: "",
     location: location.pathname,
+    productType: "Selecciona",
   };
   const {
     register,
@@ -25,7 +27,7 @@ export default function ContactUsForm() {
     emailjs
       .send(
         import.meta.env.VITE_API_SERVICEID,
-        import.meta.env.VITE_API_TEMPLATEID,
+        import.meta.env.VITE_API_TEMPLATEID2,
         data,
         import.meta.env.VITE_API_PUBLICID
       )
@@ -114,6 +116,23 @@ export default function ContactUsForm() {
             {errors.phone && (
               <ErrorMessage>{errors.phone.message}</ErrorMessage>
             )}
+          </div>
+          <div>
+            <label htmlFor="productType" className=" font-normal">
+              Producto
+            </label>
+            <select
+              id="productType"
+              className=" w-full p-1 bg-white border border-gray-300 rounded"
+              defaultValue={initialValues.productType}
+              {...register("productType", {
+                required: "El servicio es obligatorio",
+              })}
+            >
+              {services.map((item) => (
+                <option key={item.title}>{item.title}</option>
+              ))}
+            </select>
           </div>
         </div>
       </div>

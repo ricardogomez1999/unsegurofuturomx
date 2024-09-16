@@ -16,4 +16,5 @@ export type FormData = {
   email: string;
   phone: string | null;
   location: string;
+  productType: string;
 };
