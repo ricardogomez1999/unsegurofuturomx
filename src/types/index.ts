@@ -18,3 +18,11 @@ export type FormData = {
   location: string;
   productType: string;
 };
+
+export type FormData2 = {
+  name: string;
+  lastname: string;
+  email: string;
+  phone: string | null;
+  location: string;
+};

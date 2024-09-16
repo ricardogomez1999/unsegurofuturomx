@@ -1,5 +1,5 @@
 import { useForm } from "react-hook-form";
-import { FormData } from "../types";
+import { FormData2 } from "../types";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
 import ErrorMessage from "./ErrorMessage";
@@ -9,7 +9,7 @@ type ContactPropsType = {
 };
 
 export default function ContactForm({ location }: ContactPropsType) {
-  const initialValues: FormData = {
+  const initialValues: FormData2 = {
     name: "",
     lastname: "",
     email: "",
@@ -23,7 +23,7 @@ export default function ContactForm({ location }: ContactPropsType) {
     formState: { errors },
   } = useForm({ defaultValues: initialValues });
 
-  const handleEmail = (data: FormData) => {
+  const handleEmail = (data: FormData2) => {
     emailjs
       .send(
         import.meta.env.VITE_API_SERVICEID,
