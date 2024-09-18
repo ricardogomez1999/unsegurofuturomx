@@ -4,6 +4,7 @@ import { ToastContainer } from "react-toastify";
 import Logo from "../Components/Logo";
 import BurgerMenu from "../Components/BurgerMenu";
 import "react-toastify/dist/ReactToastify.css";
+import IconSegurosMonterrey from "../Components/IconSegurosMonterrey";
 
 export default function InformationLayOut() {
   return (
@@ -45,8 +46,9 @@ export default function InformationLayOut() {
         </div>
         <BurgerMenu />
       </header>
-      <main className=" max-w-screen-xl mx-auto md:mt-10 p-5">
+      <main className=" max-w-screen-xl mx-auto md:mt-10 p-5 relative">
         <Outlet />
+        <IconSegurosMonterrey />
       </main>
       <ToastContainer pauseOnHover={false} pauseOnFocusLoss={false} />
     </>
