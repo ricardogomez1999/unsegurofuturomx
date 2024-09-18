@@ -7,21 +7,21 @@ export default function ContactUs() {
       <Helmet>
         <title>Contactanos | Seguros de Vida en Mexico</title>
       </Helmet>
-      <h1 className=" text-5xl text-blue-900 font-bold">
+      <h1 className=" text-5xl text-blue-900 font-bold mb-5">
         Ponte en contacto con nosotros!
       </h1>
       <h2 className=" text-3xl mb-5">
         Dejanos tus datos y nos contactaremos contigo lo antes posible!
       </h2>
-      <div className=" flex-col flex md:flex-row bg-gray-300 rounded-lg justify-center items-center">
-        <div className=" md:w-1/2 p-5 h-96 md:overflow-hidde">
+      <div className=" flex-col gap-5 md:gap-0 flex md:flex-row justify-center md:h-[500px]">
+        <div className=" md:w-1/2 md:overflow-hidde rounded-s-lg">
           <img
-            className="w-full h-full md:object-cover"
+            className="w-full h-full md:object-cover md:rounded-s-lg"
             src="/ContactUS.webp"
             alt="contact us image"
           />
         </div>
-        <div className="md:w-1/2 flex justify-center">
+        <div className="md:w-1/2 h-full flex justify-center p-10 bg-gray-300 md:rounded-e-lg">
           <ContactUsForm />
         </div>
       </div>

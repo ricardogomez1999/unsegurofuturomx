@@ -8,7 +8,7 @@ export default function AboutUs() {
           Acerca de Nosotros | Conoce como pondemos ayudarte en tu futuro
         </title>
       </Helmet>
-      <div className=" flex md:w-1/2 p-8 flex-col justify-start">
+      <div className=" bg-gray-100 flex md:w-1/2 py-8 px-10 flex-col justify-start rounded-xl">
         <div>
           <h1 className=" text-3xl md:text-5xl text-blue-900">
             En unfuturoseguromx

@@ -18,9 +18,9 @@ export default function Router() {
       <BrowserRouter>
         <Routes>
           <Route element={<InformationLayOut />}>
-            <Route path="/Home" element={<Home />} />
+            <Route path="/" element={<Home />} />
             <Route path="/aboutus" element={<AboutUs />} />
-            <Route path="/" element={<ContactUs />} />
+            <Route path="/contactus" element={<ContactUs />} />
             <Route path="/segurodevida" element={<SeguroDeVida />} />
             <Route path="/gastosmedicos" element={<GastosMedicos />} />
             <Route path="/vidamujer" element={<VidaMujer />} />
