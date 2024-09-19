@@ -2,7 +2,7 @@ import { Helmet } from "react-helmet-async";
 
 export default function AboutUs() {
   return (
-    <div className=" md:flex h-[550px]">
+    <div className=" md:flex md:h-[550px]">
       <Helmet>
         <title>
           Acerca de Nosotros | Conoce como pondemos ayudarte en tu futuro
@@ -34,7 +34,7 @@ export default function AboutUs() {
           buenas manos.
         </p>
       </div>
-      <div className=" md:w-1/2 p-8">
+      <div className=" md:w-1/2 p-8 h-full">
         <div className=" h-1/2 w-full md:overflow-hidden rounded-xl">
           <img
             className="md:object-cover h-full w-full"
