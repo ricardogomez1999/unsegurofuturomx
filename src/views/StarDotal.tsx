@@ -30,7 +30,7 @@ export default function StarDotal() {
         </div>
         <div className="md:w-1/2 rounded-lg h-64 md:overflow-hidden">
           <img
-            src="/stardotal.webp"
+            src="/stardotal.avif"
             alt="imagen educacion"
             className=" w-full h-full md:object-cover"
           />
