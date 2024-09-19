@@ -6,11 +6,11 @@ export default function AboutUs() {
       <Helmet>
         <title>
           Acerca de Nosotros | Conoce como pondemos ayudarte en tu futuro
-          <meta
-            name="description"
-            content="En UnFuturoSeguroMX estamos orgullosos de tener más de 300 clientes los cuales ya cuentan con una seguridad para su futuro"
-          />
         </title>
+        <meta
+          name="description"
+          content="En UnFuturoSeguroMX estamos orgullosos de tener más de 300 clientes los cuales ya cuentan con una seguridad para su futuro"
+        />
       </Helmet>
       <div className=" bg-gray-100 flex md:w-1/2 py-8 px-10 flex-col justify-start rounded-xl">
         <div>
