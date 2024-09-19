@@ -4,7 +4,7 @@ import ContactUsForm from "./ContactUsForm";
 import { XMarkIcon } from "@heroicons/react/16/solid";
 
 export default function ContactFormModal() {
-  const [show, setShow] = useState(true);
+  const [show, setShow] = useState(false);
 
   useEffect(() => {
     setTimeout(() => {
