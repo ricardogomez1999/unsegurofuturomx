@@ -5,6 +5,7 @@ export default function AvisoDePrivacidad() {
     <div>
       <Helmet>
         <title>Aviso de Privacidad | unfuturoseguromx</title>
+        <meta name="description" content="Aviso de privacidad" />
       </Helmet>
       <h1 className=" text-3xl font-bold my-3">AVISO DE PRIVACIDAD</h1>
 

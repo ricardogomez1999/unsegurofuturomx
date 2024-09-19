@@ -8,6 +8,10 @@ export default function SeguroDeAhorro() {
     <>
       <Helmet>
         <title>Seguros de Ahorro | unsegurofuturomx </title>
+        <meta
+          name="description"
+          content="Con nuestros planes de ahorro podrás guardar tu dinero de la forma más segura y haciendo que aumente. Contactanos para saber más."
+        />
       </Helmet>
       <div className=" md:flex bg-gray-100 p-6 md:h-72 rounded-lg gap-3 items-center">
         <div className=" md:w-1/2 p-2 md:h-80  flex flex-col md:justify-center">

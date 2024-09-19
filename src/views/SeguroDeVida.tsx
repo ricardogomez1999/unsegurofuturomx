@@ -8,6 +8,10 @@ export default function SeguroDeVida() {
     <>
       <Helmet>
         <title>Seguros de Vida en Mexico | unfuturoseguromx </title>
+        <meta
+          name="description"
+          content="No dejes a tu familia desamparada. Cuida de los tuyos hasta cuando no estes presente. Con los seguros de vida de seguros monterrey podrás lograr ese objetivo"
+        />
       </Helmet>
       <div className=" md:flex bg-gray-100 p-6 md:h-72 rounded-lg gap-3 items-center">
         <div className=" md:w-1/2 p-2 md:h-80  flex flex-col md:justify-center">

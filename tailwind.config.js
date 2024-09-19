@@ -5,6 +5,11 @@ export default {
     extend: {
       backgroundImage: {
         homeBg: "url('/bgHome.webp')",
+        gastosM: "url('/GastosMedicosBg.svg')",
+      },
+      backgroundPosition: {
+        "right-4": "center right -10rem",
+        "right-5": "bottom -10rem right -4rem",
       },
     },
   },

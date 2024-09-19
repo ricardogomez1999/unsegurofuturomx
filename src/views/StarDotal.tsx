@@ -8,6 +8,10 @@ export default function StarDotal() {
     <>
       <Helmet>
         <title>Seguros de ahorro | Invierte seguro con nosotros </title>
+        <meta
+          name="description"
+          content="Los seguros de ahorro de seguros monterrey son ideales para jovenes y adultos que busquen su libertad financiera, unete a nosotros y empieza tu futuro seguro."
+        />
       </Helmet>
       <div className=" md:flex bg-gray-100 p-6 md:h-72 rounded-lg gap-3 items-center">
         <div className=" md:w-1/2 p-2 md:h-80  flex flex-col md:justify-center">

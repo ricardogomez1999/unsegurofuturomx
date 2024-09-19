@@ -1,20 +1,21 @@
 import { useForm } from "react-hook-form";
-import { FormData2 } from "../types";
+import { FormData } from "../types";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
-import ErrorMessage from "./ErrorMessage";
+import { services } from "../data";
 
-type ContactPropsType = {
+type ContactFormProps = {
   location: string;
 };
 
-export default function ContactForm({ location }: ContactPropsType) {
-  const initialValues: FormData2 = {
+export default function ContactForm({ location }: ContactFormProps) {
+  const initialValues: FormData = {
     name: "",
     lastname: "",
     email: "",
     phone: "",
     location: location,
+    productType: "Selecciona",
   };
   const {
     register,
@@ -23,11 +24,11 @@ export default function ContactForm({ location }: ContactPropsType) {
     formState: { errors },
   } = useForm({ defaultValues: initialValues });
 
-  const handleEmail = (data: FormData2) => {
+  const handleEmail = (data: FormData) => {
     emailjs
       .send(
         import.meta.env.VITE_API_SERVICEID,
-        import.meta.env.VITE_API_TEMPLATEID,
+        import.meta.env.VITE_API_TEMPLATEID2,
         data,
         import.meta.env.VITE_API_PUBLICID
       )
@@ -46,84 +47,104 @@ export default function ContactForm({ location }: ContactPropsType) {
   return (
     <form
       onSubmit={handleSubmit(handleEmail)}
-      className=" space-y-3 flex flex-col p-8 text-primary"
+      className=" w-full space-y-3 flex flex-col py-8 text-primary"
       noValidate
     >
-      <div className=" flex flex-col gap-2">
-        <div className=" md:flex gap-5">
-          <div className=" md:w-1/2">
-            <label htmlFor="name" className=" font-normal">
+      <div className=" flex flex-col gap-5">
+        {/* <label htmlFor="name" className=" font-normal">
               Nombre*
-            </label>
-            <input
-              id="name"
-              type="text"
-              className=" w-full p-1 border border-gray-300 rounded"
-              {...register("name", {
-                required: "El nombre es obligatorio",
-              })}
-            />
-            {errors.name && <ErrorMessage>{errors.name.message}</ErrorMessage>}
-          </div>
+            </label> */}
+        <input
+          placeholder="Primer nombre"
+          id="name"
+          type="text"
+          className={
+            errors.name
+              ? " w-full h-8 p-5 border border-red-600 rounded-lg placeholder:text-red-600"
+              : " w-full h-8 p-5 border border-gray-300 rounded-lg"
+          }
+          {...register("name", {
+            required: "El nombre es obligatorio",
+          })}
+        />
 
-          <div className=" md:w-1/2">
-            <label htmlFor="lastname" className=" font-normal">
+        {/* <label htmlFor="lastname" className=" font-normal">
               Primer apellido*
-            </label>
-            <input
-              id="lastname"
-              type="text"
-              className=" w-full p-1 border border-gray-300 rounded"
-              {...register("lastname", {
-                required: "El apellido es obligatorio",
-              })}
-            />
-            {errors.lastname && (
-              <ErrorMessage>{errors.lastname.message}</ErrorMessage>
-            )}
-          </div>
-        </div>
+            </label> */}
+        <input
+          placeholder="Primer apellido"
+          id="lastname"
+          type="text"
+          className={
+            errors.lastname
+              ? " w-full h-8 p-5 border border-red-600 rounded-lg placeholder:text-red-600"
+              : " w-full h-8 p-5 border border-gray-300 rounded-lg"
+          }
+          {...register("lastname", {
+            required: "El apellido es obligatorio",
+          })}
+        />
 
-        <div className=" md:flex gap-5">
-          <div className=" md:w-1/2">
-            <label htmlFor="email" className=" font-normal">
+        {/* <label htmlFor="email" className=" font-normal">
               Correo*
-            </label>
-            <input
-              id="email"
-              type="text"
-              className=" w-full p-1 border border-gray-300 rounded"
-              {...register("email", {
-                required: "El correo es obligatorio",
-              })}
-            />
-            {errors.email && (
-              <ErrorMessage>{errors.email.message}</ErrorMessage>
-            )}
-          </div>
-          <div className=" md:w-1/2">
-            <label htmlFor="phone" className=" font-normal">
+            </label> */}
+        <input
+          placeholder="Correo electronico"
+          id="email"
+          type="text"
+          className={
+            errors.email
+              ? " w-full h-8 p-5 border border-red-600 rounded-lg placeholder:text-red-600"
+              : " w-full h-8 p-5 border border-gray-300 rounded-lg"
+          }
+          {...register("email", {
+            required: "El correo es obligatorio",
+          })}
+        />
+
+        {/* <label htmlFor="phone" className=" font-normal">
               Telefono*
-            </label>
-            <input
-              id="phone"
-              type="text"
-              className=" w-full p-1 border border-gray-300 rounded"
-              {...register("phone", {
-                required: "El telefono es obligatorio",
-              })}
-            />
-            {errors.phone && (
-              <ErrorMessage>{errors.phone.message}</ErrorMessage>
-            )}
-          </div>
-        </div>
+            </label> */}
+        <input
+          placeholder="Número de celular"
+          id="phone"
+          type="text"
+          className={
+            errors.phone
+              ? " w-full h-8 p-5 border border-red-600 rounded-lg placeholder:text-red-600"
+              : " w-full h-8 p-5 border border-gray-300 rounded-lg"
+          }
+          {...register("phone", {
+            required: "El telefono es obligatorio",
+          })}
+        />
+
+        {/* <label htmlFor="productType" className=" font-normal">
+              Producto
+            </label> */}
+        <select
+          id="productType"
+          className={
+            errors.productType
+              ? " w-full h-8 px-5 border border-red-600 rounded-lg "
+              : " w-full h-8 px-5 border border-gray-300 rounded-lg"
+          }
+          {...register("productType", {
+            required: "El servicio es obligatorio",
+          })}
+        >
+          {services.map((item) => (
+            <option key={item.title}>{item.title}</option>
+          ))}
+        </select>
       </div>
-      <input
-        type="submit"
-        value="Enviar"
-        className=" bg-blue-800 p-2 text-white cursor-pointer rounded w-fit"
-      />
+      <div className=" w-full flex justify-center">
+        <input
+          type="submit"
+          value="Cotizar"
+          className=" bg-blue-800 p-2 text-white cursor-pointer rounded w-24"
+        />
+      </div>
     </form>
   );
 }

@@ -8,6 +8,10 @@ export default function VidaMujer() {
     <>
       <Helmet>
         <title>Seguros para las mujeres | unfuturoseguromx </title>
+        <meta
+          name="description"
+          content="Las mujeres cada vez somos más independientes y este tipo de seguros son ideales para cuidar de tu patrimonio, acercate con nosotros y empieza un futuro seguro."
+        />
       </Helmet>
       <div className=" md:flex bg-gray-100 p-6 md:h-72 rounded-lg gap-3 items-center">
         <div className=" md:w-1/2 p-2 md:h-80  flex flex-col md:justify-center">

@@ -6,6 +6,10 @@ export default function ContactUs() {
     <div>
       <Helmet>
         <title>Contactanos | Seguros de Vida en Mexico</title>
+        <meta
+          name="description"
+          content="Contactanos para emepzar un seguro futuro de la mano de expertos financieros."
+        />
       </Helmet>
       <h1 className=" text-5xl text-blue-900 font-bold mb-5">
         Ponte en contacto con nosotros!

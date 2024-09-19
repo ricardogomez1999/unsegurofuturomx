@@ -9,6 +9,10 @@ export default function Educacion() {
     <>
       <Helmet>
         <title>Seguros de Educacion en Mexico </title>
+        <meta
+          name="description"
+          content="Asegura la educación de tus hijos, con los seguro de educación te aseguras que tu hijo tenga un futuro brillante, dale un futuro seguro."
+        />
       </Helmet>
       <div className=" md:flex bg-gray-100 p-6 md:h-72 rounded-lg gap-3 items-center">
         <div className=" md:w-1/2 p-2 md:h-80  flex flex-col md:justify-center">
