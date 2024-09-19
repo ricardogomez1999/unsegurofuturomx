@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { lazy, Suspense } from "react";
 import InformationLayOut from "./Layouts/InformationLayOut";
 import { HelmetProvider } from "react-helmet-async";
+import Loading from "./Components/Loading";
 const AboutUs = lazy(() => import("./views/AboutUs"));
 const ContactUs = lazy(() => import("./views/ContactUs"));
 const SeguroDeVida = lazy(() => import("./views/SeguroDeVida"));
@@ -22,7 +23,7 @@ export default function Router() {
             <Route
               path="/"
               element={
-                <Suspense fallback="Loading...">
+                <Suspense fallback={<Loading />}>
                   <Home />
                 </Suspense>
               }
@@ -30,7 +31,7 @@ export default function Router() {
             <Route
               path="/aboutus"
               element={
-                <Suspense fallback="Loading...">
+                <Suspense fallback={<Loading />}>
                   <AboutUs />
                 </Suspense>
               }
@@ -38,7 +39,7 @@ export default function Router() {
             <Route
               path="/contactus"
               element={
-                <Suspense fallback="Loading...">
+                <Suspense fallback={<Loading />}>
                   <ContactUs />
                 </Suspense>
               }
@@ -46,7 +47,7 @@ export default function Router() {
             <Route
               path="/segurodevida"
               element={
-                <Suspense fallback="Loading...">
+                <Suspense fallback={<Loading />}>
                   <SeguroDeVida />
                 </Suspense>
               }
@@ -54,7 +55,7 @@ export default function Router() {
             <Route
               path="/gastosmedicos"
               element={
-                <Suspense fallback="Loading...">
+                <Suspense fallback={<Loading />}>
                   <GastosMedicos />
                 </Suspense>
               }
@@ -62,7 +63,7 @@ export default function Router() {
             <Route
               path="/vidamujer"
               element={
-                <Suspense fallback="Loading...">
+                <Suspense fallback={<Loading />}>
                   <VidaMujer />
                 </Suspense>
               }
@@ -70,7 +71,7 @@ export default function Router() {
             <Route
               path="/stardotal"
               element={
-                <Suspense fallback="Loading...">
+                <Suspense fallback={<Loading />}>
                   <StarDotal />
                 </Suspense>
               }
@@ -78,7 +79,7 @@ export default function Router() {
             <Route
               path="/educacion"
               element={
-                <Suspense fallback="Loading...">
+                <Suspense fallback={<Loading />}>
                   <Educacion />
                 </Suspense>
               }
@@ -86,7 +87,7 @@ export default function Router() {
             <Route
               path="/segurodeahorro"
               element={
-                <Suspense fallback="Loading...">
+                <Suspense fallback={<Loading />}>
                   <SeguroDeAhorro />
                 </Suspense>
               }
@@ -94,7 +95,7 @@ export default function Router() {
             <Route
               path="/aviso-de-privacidad"
               element={
-                <Suspense fallback="Loading...">
+                <Suspense fallback={<Loading />}>
                   <AvisoDePrivacidad />
                 </Suspense>
               }
