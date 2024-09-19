@@ -44,7 +44,7 @@ export default function AboutUs() {
         </div>
         <div className=" flex flex-col  md:grid grid-cols-2 grid-rows-2 gap-4 my-5 h-1/2 w-full">
           <div className=" bg-gray-100 rounded-lg flex flex-col justify-center md:px-5 p-5 h-full w-full">
-            <h1 className=" text-center md:text-start text-4xl">180</h1>
+            <h1 className=" text-center md:text-start text-4xl">171</h1>
             <p className=" text-center md:text-start">clientes satisfechos</p>
           </div>
           <div className=" bg-gray-100 rounded-lg flex flex-col justify-center md:px-5 p-5 h-full w-full">
@@ -56,7 +56,7 @@ export default function AboutUs() {
             <p className=" text-center md:text-start"> Años de experiencia</p>
           </div>
           <div className=" bg-gray-100 rounded-lg flex flex-col justify-center md:px-5 p-5 h-full w-full">
-            <h1 className=" text-center md:text-start text-4xl">+40</h1>
+            <h1 className=" text-center md:text-start text-4xl">+100</h1>
             <p className=" text-center md:text-start">Familias seguras</p>
           </div>
         </div>
