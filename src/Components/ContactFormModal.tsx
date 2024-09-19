@@ -1,9 +1,10 @@
 import { Fragment, useEffect, useState } from "react";
-import { Dialog, Transition } from "@headlessui/react";
+import { Dialog, Transition, CloseButton } from "@headlessui/react";
 import ContactUsForm from "./ContactUsForm";
+import { XMarkIcon } from "@heroicons/react/16/solid";
 
 export default function ContactFormModal() {
-  const [show, setShow] = useState(false);
+  const [show, setShow] = useState(true);
 
   useEffect(() => {
     setTimeout(() => {
@@ -44,15 +45,18 @@ export default function ContactFormModal() {
                 leaveFrom="opacity-100 scale-100"
                 leaveTo="opacity-0 scale-95"
               >
-                <Dialog.Panel className="w-1/2 max-w-4xl transform overflow-hidden rounded-2xl bg-white text-left align-middle shadow-xl transition-all p-16">
+                <Dialog.Panel className="md:w-1/2 max-w-4xl transform overflow-hidden rounded-2xl bg-white text-left align-middle shadow-xl transition-all p-6 md:p-16">
+                  <CloseButton className="w-full flex justify-end">
+                    <XMarkIcon className="w-8" />
+                  </CloseButton>
                   <Dialog.Title
                     as="h3"
-                    className="font-bold text-4xl text-center  my-5"
+                    className="font-bold text-xl md:text-4xl text-center  my-5"
                   >
                     No pierdas la oportunidad de un futuro seguro
                   </Dialog.Title>
 
-                  <p className="text-xl text-center">
+                  <p className=" text-md md:text-xl text-center">
                     Dejanos tus datos para una asesoría {""}
                     <span className="text-blue-800 font-bold">
                       completamente gratuita
