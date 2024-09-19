@@ -5,6 +5,7 @@ import Logo from "../Components/Logo";
 import BurgerMenu from "../Components/BurgerMenu";
 import "react-toastify/dist/ReactToastify.css";
 import IconSegurosMonterrey from "../Components/IconSegurosMonterrey";
+import ContactFormModal from "../Components/ContactFormModal";
 
 export default function InformationLayOut() {
   return (
@@ -49,6 +50,7 @@ export default function InformationLayOut() {
       <main className=" max-w-screen-xl mx-auto md:mt-10 p-5 relative">
         <Outlet />
         <IconSegurosMonterrey />
+        <ContactFormModal />
       </main>
       <ToastContainer pauseOnHover={false} pauseOnFocusLoss={false} />
     </>

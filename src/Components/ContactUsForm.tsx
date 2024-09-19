@@ -32,12 +32,12 @@ export default function ContactUsForm() {
       )
       .then(
         (response) => {
-          toast.success(`Message sent successfully`);
+          toast.success(`Mensaje enviado exitosamente!`);
           console.log(response);
           reset();
         },
-        (error) => {
-          toast.error(`Message not send, try again ${error}`);
+        () => {
+          toast.error(`Mensaje no enviado, trata de nuevo`);
         }
       );
   };
