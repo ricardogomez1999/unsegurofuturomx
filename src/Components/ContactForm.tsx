@@ -35,7 +35,7 @@ export default function ContactForm({ location }: ContactFormProps) {
       .then(
         (response) => {
           toast.success(`Message sent successfully`);
-          console.log(response);
+
           reset();
         },
         (error) => {
