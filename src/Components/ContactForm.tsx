@@ -33,7 +33,7 @@ export default function ContactForm({ location }: ContactFormProps) {
         import.meta.env.VITE_API_PUBLICID
       )
       .then(
-        (response) => {
+        () => {
           toast.success(`Message sent successfully`);
 
           reset();
